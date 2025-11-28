@@ -150,7 +150,15 @@
                             <i class="fab fa-envira mr-2"></i>武陵農場 賞楓 
                             <a href="https://maps.app.goo.gl/ncVJD6GbqgrcURb27" target="_blank" class="text-red-500 hover:text-red-700 ml-3"><i class="fas fa-map-marked-alt text-lg"></i></a>
                         </h3>
-                        <p class="text-base text-red-700 font-medium mb-3">停留時間：約 4 小時</p>
+                        
+                        <!-- 資訊標籤區 -->
+                        <div class="flex flex-wrap items-center gap-3 mb-4">
+                            <span class="text-base text-red-700 font-medium"><i class="far fa-clock mr-1"></i>停留：約 4 小時</span>
+                            <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full border border-green-200 font-medium">
+                                <i class="fas fa-ticket-alt mr-1"></i>平日全票 $130
+                            </span>
+                        </div>
+
                         <div class="bg-white/80 p-4 rounded-lg border border-red-200 mb-2 shadow-inner">
                             <h4 class="font-bold text-red-800 mb-1"><i class="fas fa-map-signs mr-1"></i>推薦路線：</h4>
                             <p class="text-gray-700">遊客中心周邊 ➔ 楓林小館 ➔ 武陵茶莊</p>
@@ -374,21 +382,63 @@
                             <i class="fab fa-envira mr-2"></i>福壽山農場 賞楓
                             <a href="https://maps.app.goo.gl/8ZR4Wf84hMzRQ3sc6" target="_blank" class="text-red-500 hover:text-red-700 ml-3"><i class="fas fa-map-marked-alt text-lg"></i></a>
                         </h3>
-                        <p class="text-base text-red-700 font-medium mb-3">停留時間：約 2.5 小時（時間緊湊）</p>
+                        
+                        <!-- 資訊標籤區 -->
+                        <div class="flex flex-wrap items-center gap-3 mb-4">
+                            <span class="text-base text-red-700 font-medium"><i class="far fa-clock mr-1"></i>停留：約 2.5 小時</span>
+                            <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full border border-green-200 font-medium">
+                                <i class="fas fa-ticket-alt mr-1"></i>平日全票 $80
+                            </span>
+                        </div>
 
-                        <div class="grid md:grid-cols-2 gap-4 mt-3">
-                            <div class="bg-white/70 p-4 rounded-lg border border-red-200 shadow-inner">
-                                <h4 class="font-bold text-red-800 mb-1 text-lg">1. 松盧 (必拍!)
-                                    <a href="https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%A3%BD%E5%B1%B1%E8%BE%B2%E5%A0%B4%E6%9D%BE%E5%BB%A2" target="_blank" class="text-red-500 hover:text-red-700 ml-1"><i class="fas fa-map-marked-alt text-base"></i></a>
-                                </h4>
-                                <p class="text-xs text-gray-600">最著名的日式庭院賞楓點。</p>
-                            </div>
-                            <div class="bg-white/70 p-4 rounded-lg border border-red-200 shadow-inner">
-                                <h4 class="font-bold text-red-800 mb-1 text-lg">2. 天池與達觀亭
-                                    <a href="https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%A3%BD%E5%B1%B1%E8%BE%B2%E5%A0%B4%E5%A4%A9%E6%B1%A0%E8%88%87%E9%81%94%E8%A7%80%E4%BA%AD" target="_blank" class="text-red-500 hover:text-red-700 ml-1"><i class="fas fa-map-marked-alt text-base"></i></a>
-                                </h4>
-                                <p class="text-xs text-gray-600">若時間不夠，建議<strong>優先集中在松盧</strong>。</p>
-                            </div>
+                        <!-- 官網地圖按鈕 -->
+                        <div class="mb-4">
+                            <a href="https://www.fushoushan.com.tw/Outer/Facilities" target="_blank" class="flex items-center justify-center w-full p-3 bg-teal-50 text-teal-700 border border-teal-200 rounded-lg hover:bg-teal-100 transition-colors">
+                                <i class="fas fa-map mr-2"></i>查看福壽山農場官方導覽地圖
+                            </a>
+                        </div>
+
+                        <!-- 摺疊式景點介紹 -->
+                        <div class="mb-4">
+                            <details class="group bg-white/80 rounded-lg border border-red-200 overflow-hidden shadow-sm">
+                                <summary class="flex items-center justify-between p-3 cursor-pointer select-none bg-red-50 hover:bg-red-100 transition-colors">
+                                    <span class="font-bold text-red-900"><i class="fas fa-map-signs mr-2 text-red-600"></i>景點深度介紹 (點擊展開)</span>
+                                    <span class="transition-transform duration-300 group-open:rotate-180">
+                                        <i class="fas fa-chevron-down text-red-400"></i>
+                                    </span>
+                                </summary>
+                                <div class="p-4 text-sm text-gray-700 space-y-5 bg-white">
+                                    
+                                    <!-- 松盧 -->
+                                    <div class="border-l-4 border-red-800 pl-3">
+                                        <h4 class="font-bold text-red-900 text-base mb-1">🍁 松盧 (招牌明星/必拍熱點)</h4>
+                                        <p class="leading-relaxed mb-2">農場最經典景觀！古樸木造建築周圍環繞掌葉楓與銀杏。11月中至12月初為巔峰，紅黃色彩交織極其濃烈，配上小橋流水，張張如明信片。</p>
+                                        <div class="text-xs text-amber-800 bg-amber-50 p-2 rounded inline-block border border-amber-100">
+                                            <i class="fas fa-lightbulb mr-1 text-amber-500"></i>
+                                            <strong>貼心提點：</strong>人潮極多！想拍淨空畫面，務必清晨6點前利用晨光卡位拍攝。
+                                        </div>
+                                    </div>
+
+                                    <!-- 鴛鴦湖 -->
+                                    <div class="border-l-4 border-teal-600 pl-3">
+                                        <h4 class="font-bold text-teal-800 text-base mb-1">🌲 鴛鴦湖景觀步道 (環湖散策)</h4>
+                                        <p class="leading-relaxed">步道平坦好走，環繞湖泊與高山茶園。清晨或傍晚雲霧繚繞時，湖光山色倒影最為夢幻詩意，適合放空拍美照。</p>
+                                    </div>
+
+                                    <!-- 三大樹王 -->
+                                    <div class="border-l-4 border-red-500 pl-3">
+                                        <h4 class="font-bold text-red-700 text-base mb-1">🍎 三大樹王 (嫁接奇觀)</h4>
+                                        <p class="leading-relaxed">見證高超農業技術！著名的蘋果王單株即嫁接超過40種品種。開花結果時節，同株樹上掛滿顏色形狀各異的果實，令人嘖嘖稱奇。</p>
+                                    </div>
+
+                                    <!-- 製茶廠 -->
+                                    <div class="border-l-4 border-green-600 pl-3">
+                                        <h4 class="font-bold text-green-800 text-base mb-1">🍵 製茶廠與茶園 (壯麗地景)</h4>
+                                        <p class="leading-relaxed">福壽長春茶產地。一排排翠綠茶樹沿山坡層疊種植，線條優美開闊，是攝影愛好者必訪的靜謐景點。</p>
+                                    </div>
+
+                                </div>
+                            </details>
                         </div>
 
                          <!-- 筆記區 -->
@@ -484,40 +534,27 @@
         <p class="text-xs mt-2 text-gray-500">行程時間僅供參考，請依實際路況與車班為準。</p>
     </footer>
 
-    <!-- JavaScript Script for Auto-Saving Notes -->
+    <!-- JavaScript Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Select all textarea elements that start with id 'note-'
+            // Auto-Saving Notes Logic
             const notes = document.querySelectorAll('textarea[id^="note-"]');
-
             notes.forEach(note => {
                 const noteId = note.id;
                 const savedValue = localStorage.getItem(noteId);
                 const indicatorId = 'saved-' + noteId;
                 const indicator = document.getElementById(indicatorId);
-
-                // 1. Load saved content on page load
-                if (savedValue) {
-                    note.value = savedValue;
-                }
-
-                // 2. Add event listener for auto-saving
+                if (savedValue) note.value = savedValue;
                 let timeoutId;
                 note.addEventListener('input', function() {
-                    // Save to local storage
                     localStorage.setItem(noteId, this.value);
-
-                    // Show "Saved" indicator with a debounce effect (don't flash too often)
                     clearTimeout(timeoutId);
                     timeoutId = setTimeout(() => {
                         if (indicator) {
                             indicator.classList.add('show');
-                            // Hide indicator after 2 seconds
-                            setTimeout(() => {
-                                indicator.classList.remove('show');
-                            }, 2000);
+                            setTimeout(() => indicator.classList.remove('show'), 2000);
                         }
-                    }, 500); // Wait 0.5s after typing stops to show saved
+                    }, 500);
                 });
             });
         });
